@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>DEA — Classement des coffres</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0f131b;color:#f4f6fa;font-family:Arial,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:20px 10px 38px}
+h1{text-align:center;margin:0;font-size:30px}
+.sub{text-align:center;color:#aeb7c5;margin:7px 0 20px}
+.card,.box{background:#181e28;border:1px solid #303949;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px #0005}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:850px}
+th,td{padding:10px 8px;text-align:center;border-bottom:1px solid #29313e}
+th{background:#222a36;color:#d9e0e9;font-size:12px;position:sticky;top:0}
+.player,th:nth-child(2){text-align:left}
+tbody tr:hover{background:#202733}
+.rank{font-size:19px;width:48px}
+.score{min-width:125px;white-space:nowrap}
+.bar{height:9px;background:#343c49;border-radius:9px;overflow:hidden;margin-top:6px}
+.fill{height:100%;border-radius:9px}
+.red{background:#e53935}
+.white{background:#f2f2f2}
+.green{background:#35c46f}
+.gold{color:#d4af37;font-weight:700}
+.score small{color:#9fa9b8;font-size:11px}
+.week-status{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 20px}
+.week-bubble{background:#181e28;border:1px solid #303949;border-radius:18px;padding:15px 16px;text-align:center;box-shadow:0 8px 25px #0005}
+.week-bubble.closed{border-color:#4a5361}
+.week-bubble.current{border-color:#35c46f}
+.week-title{font-size:14px;font-weight:700;margin-bottom:7px}
+.week-dates{font-size:15px;font-weight:700;margin-bottom:6px}
+.week-points{margin-top:7px;font-size:14px;font-weight:700}
+section{margin-top:20px}
+.box{padding:14px}
+.box h2{margin:0 0 12px;font-size:19px}
+.legend{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;color:#b8c0cc;font-size:12px;margin-top:12px}
+.note{text-align:center;color:#aeb7c5;font-size:13px;margin:8px 0 18px}
+@media(max-width:700px){
+  .wrap{padding:14px 7px 30px}
+  h1{font-size:25px}
+  .sub{font-size:13px}
+  table{min-width:820px}
+  .week-status{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>DEA - NICO :)</h1>
+<h2 style="text-align:center;margin:6px 0 8px;font-size:21px">Classement des coffres</h2>
+<div class="week-status">
+<div class="week-bubble closed">
+<div class="week-title">🔒 SEMAINE PRÉCÉDENTE — CLÔTURÉE</div>
+<div class="week-dates">27/09/2026 → 04/10/2026</div>
+<div class="week-points">4 960 coffres<br/>6 465 points / objectif 100</div>
+</div>
+<div class="week-bubble current">
+<div class="week-title">🟢 SEMAINE EN COURS</div>
+<div class="week-dates">04/10/2026 → 11/10/2026</div>
+<div class="week-points">2 516 coffres<br/>3 903 points / objectif 100</div>
+</div>
+</div>
+<div class="sub">Dernière mise à jour : 08/10/2026 à 18h50</div>
+<div class="note"><b>Objectif : 100 points / joueur / semaine — aucun blocage à 100. Le score continue au-delà de 100.</b></div>
+<div class="card"><div class="tablewrap"><table>
+<thead><tr>
+<th>🏆</th><th>Joueur</th><th>📦 Coffres</th><th>Communes</th><th>Rares</th><th>Épiques</th><th>Citadelles</th><th>Monstres</th><th>🎯 Points /100</th>
+</tr></thead>
+
+<tbody>
+<tr><td>Communes</td><td>5</td><td>0</td></tr>
+<tr><td>Communes</td><td>10</td><td>0</td></tr>
+<tr><td>Communes</td><td>15</td><td>1</td></tr>
+<tr><td>Communes</td><td>20</td><td>2</td></tr>
+<tr><td>Communes</td><td>25</td><td>3</td></tr>
+<tr><td>Rares</td><td>5</td><td>0</td></tr>
+<tr><td>Rares</td><td>10</td><td>0</td></tr>
+<tr><td>Rares</td><td>15</td><td>1</td></tr>
+<tr><td>Rares</td><td>20</td><td>2</td></tr>
+<tr><td>Rares</td><td>25</td><td>3</td></tr>
+<tr><td>Rares</td><td>30</td><td>4</td></tr>
+<tr><td>Épiques</td><td>5</td><td>0</td></tr>
+<tr><td>Épiques</td><td>10</td><td>0</td></tr>
+<tr><td>Épiques</td><td>15</td><td>1</td></tr>
+<tr><td>Épiques</td><td>20</td><td>2</td></tr>
+<tr><td>Épiques</td><td>25</td><td>3</td></tr>
+<tr><td>Épiques</td><td>30</td><td>4</td></tr>
+<tr><td>Épiques</td><td>35</td><td>5</td></tr>
+<tr><td>Citadelle elfique</td><td>15</td><td>1</td></tr>
+<tr><td>Citadelle elfique</td><td>20</td><td>2</td></tr>
+<tr><td>Citadelle elfique</td><td>25</td><td>3</td></tr>
+<tr><td>Citadelle elfique</td><td>30</td><td>4</td></tr>
+<tr><td>Citadelle maudite</td><td>15</td><td>1</td></tr>
+<tr><td>Citadelle maudite</td><td>20</td><td>2</td></tr>
+<tr><td>Citadelle maudite</td><td>25</td><td>3</td></tr>
+<tr><td>Citadelle maudite</td><td>30</td><td>4</td></tr>
+<tr><td>Monstre épique</td><td>50</td><td>5</td></tr>
+<tr><td>Monstre héroïque</td><td>16 à 45</td><td>1</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Wooden Chest</td><td>1</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Bronze Chest</td><td>2</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Silver Chest</td><td>3</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Gold Chest</td><td>4</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Golden Chest</td><td>4</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Precious Chest</td><td>5</td></tr>
+<tr><tr><td>Coffre acheté</td><td>Magic Chest</td><td>6</td></tr>
+<tr><tr><td>Crypt sans level</td><td>—</td><td>2</td></tr>
+</tbody></table></div></div>
+<div class="legend"><span>🔴 0–50 %</span><span>⚪ 51–99 %</span><span>🟢 100 % et +</span></div>
+<section><div class="box">
+<h2>📋 Barème des points</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Catégorie</th><th>Niveau / type</th><th>Points</th></tr></thead>
+<tbody><tr><td>68</td><td>5</td><td>0</td></tr><tr><td>69</td><td>10</td><td>0</td></tr><tr><td>70</td><td>15</td><td>1</td></tr><tr><td>71</td><td>20</td><td>2</td></tr><tr><td>72</td><td>25</td><td>3</td></tr><tr><td>73</td><td>5</td><td>0</td></tr><tr><td>74</td><td>10</td><td>0</td></tr><tr><td>75</td><td>15</td><td>1</td></tr><tr><td>76</td><td>20</td><td>2</td></tr><tr><td>77</td><td>25</td><td>3</td></tr><tr><td>78</td><td>30</td><td>4</td></tr><tr><td>79</td><td>5</td><td>0</td></tr><tr><td>80</td><td>10</td><td>0</td></tr><tr><td>81</td><td>15</td><td>1</td></tr><tr><td>82</td><td>20</td><td>2</td></tr><tr><td>83</td><td>25</td><td>3</td></tr><tr><td>84</td><td>30</td><td>4</td></tr><tr><td>85</td><td>35</td><td>5</td></tr><tr><td>86</td><td>15</td><td>1</td></tr><tr><td>87</td><td>20</td><td>2</td></tr><tr><td>88</td><td>25</td><td>3</td></tr><tr><td>89</td><td>30</td><td>4</td></tr><tr><td>90</td><td>15</td><td>1</td></tr><tr><td>91</td><td>20</td><td>2</td></tr><tr><td>92</td><td>25</td><td>3</td></tr><tr><td>93</td><td>30</td><td>4</td></tr><tr><td>94</td><td>50</td><td>5</td></tr><tr><td>95</td><td>16 à 45</td><td>1</td></tr><tr><td>96</td><td>Wooden Chest</td><td>1</td></tr><tr><td>97</td><td>Bronze Chest</td><td>2</td></tr><tr><td>98</td><td>Silver Chest</td><td>3</td></tr><tr><td>99</td><td>Gold Chest</td><td>4</td></tr><tr><td>100</td><td>Golden Chest</td><td>4</td></tr><tr><td>101</td><td>Precious Chest</td><td>5</td></tr><tr><td>102</td><td>Magic Chest</td><td>6</td></tr></tbody></table></div>
+</div></section>
+</div>
+</body>
+</html>
